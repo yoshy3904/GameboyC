@@ -1,5 +1,5 @@
 # GameboyC
-A C-like compiler for the GameBoy. 
+A C-like compiler for the GameBoy written in C++. 
 
 ## How does it work?
 It produces .asm files that can be compiled into .gb files using rgbds (https://rgbds.gbdev.io/). It uses SFML to read .png files, but the translator itself is fully independant.
