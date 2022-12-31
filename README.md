@@ -14,6 +14,11 @@ int value = 0;
 ```
 All functions return an integer, although return isn't needed to be specified.
 ```
+int add(int a, int b)
+{
+  return a + b;
+}
+
 int main()
 {
   //...
@@ -37,3 +42,11 @@ Expressions: `*, +, -, /`
 
 `true` evaluates to 0xff
 `false` evalutes to 0
+
+Most importantly, writing inline assembly.
+```
+asm{
+  ld a, 10
+  ...
+};
+```
