@@ -1,18 +1,12 @@
 # GameboyC
-A C-like compiler for the GameBoy written in C++. 
-
-## How does it work?
-It produces .asm files that can be compiled into .gb files using rgbds (https://rgbds.gbdev.io/). It uses SFML to read .png files, but the translator itself is fully independant.
-
-> .\gc.exe file_to_compile.gc
+A C-like compiler for the GameBoy written in C++. Using rgbds (https://rgbds.gbdev.io/) and SFML to convert images to assembly.
 
 ## Language
-The compiler tries to be as close as possible to C. 
-There is only one variable type: a 8-bit value.
+8-bit integer.
 ```
 int value = 0;
 ```
-All functions return an integer, although return isn't needed to be specified.
+Functions
 ```
 int add(int a, int b)
 {
@@ -24,7 +18,7 @@ int main()
   //...
 }
 ```
-If and while are the only control structures available.
+Control Structures.
 ```
 if(...)
 {
@@ -36,14 +30,13 @@ while(...)
   //...
 }
 ```
-Operators are:
 Boolean expressions: `==, !=, >, <, &, !, |, ^`
 Expressions: `*, +, -, /`
 
 `true` evaluates to 0xff
 `false` evalutes to 0
 
-Most importantly, writing inline assembly.
+Inline assembly.
 ```
 asm{
   ld a, 10
