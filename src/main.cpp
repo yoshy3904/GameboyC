@@ -1,16 +1,5 @@
 #include "Translator.hpp"
 
-// if, if-else, while statements DONE
-// arithmetic and boolean expressions DONE
-// binary, hex, dec lesen DONE
-// interrupt functions DONE
-// function mit return und parameter DONE
-// input
-// display tiles and sprites
-// kleine operatoren (++, --, +=, -=, *=, /=)
-// Kommentare
-// 0x0b wird als Binärzahl erkannt
-
 int main(int argc, char** argv)
 {
     std::string file_path;
